@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+
+
+    font-family: "Open Sans", sans-serif;
+    background-color: #0d1b2a;
+}
+
+header {
+
+    padding: 2em; 
+   
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d1b2a;
+    font-size: 1.5em;
+
+
+    
+}
+
+.nav-list {
+
+    max-width: 50%;
+    flex: 1;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #778da9;
+}
+
+h1 {
+    font-size: 2em; 
+    color: white;
+}
+
+
+h2 {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-size: 2em;
+
+}
+
+
+
+
+.row-of-images {
+
+    
+    width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: space-evenly;
+
+
+} 
+
+.row-of-images img {
+
+    border-radius: 3%;
+
+}
+
+.contact-me a {
+    color: #ffa260;
+    text-decoration: none;
+}
+
+.contact-me, .pricing-button-format {
+
+    padding: 20px;
+    background-color: #0d1b2a;
+    border: 2px solid #ffa260; 
+    color: #ffa260;
+    transition: 0.2s;
+}
+
+.contact-me:hover, .pricing-button-format:hover {
+
+    border-color: #f1ff5c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow:0 0.5em 0.5em -0.4em #f1ff5c;
+    cursor: pointer;
+
+}
+
+
+.pricing-button {
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.panel {
+
+    box-sizing: border-box;
+    position: absolute; 
+    background-color: #0d1b2a;
+    top:20%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    border-radius: 10px; 
+    padding: 50px 25px; 
+
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    text-transform: uppercase;
+
+
+    z-index: 10;
+
+}
+
+.close-x {
+    
+    box-sizing: border-box;
+    position: fixed;
+    top: 2%;
+    left: 94%;
+}
+
+.close {
+    
+    
+    border-radius: 10%;
+    padding: 20px; 
+    background-color: #0d1b2a;
+    color: #ffa260;
+    transition: 0.2s;
+    border: 2px solid #ffa260; 
+    font-size: 20px;
+    font-weight: 700px;
+}
+
+.close:hover {
+
+    border-color: #f1ff5c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow:0 0.5em 0.5em -0.4em #f1ff5c;
+    cursor: pointer;
+
+}
+
+
+
+
+.pricing-plans {
+
+    box-sizing: border-box;
+    background-color: #415a77;
+    border-right: 1px solid #0d1b2a;
+    margin-right: 1%;
+    border-radius: 5px;
+    /* border-bottom: 1px solid #778da9; */
+
+}
+
+.pricing-plans:last-child {
+    
+    margin-right: 0%;
+
+}
+
+.pricing-plans:last-child {
+    border-bottom: none;
+}
+
+
+.pricing-header {
+
+    color: #e0e1dd;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.pricing-list {
+
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.pricing-image {
+
+    box-sizing: border-box;
+    /* margin-bottom: 25px; */
+    width: 100%;
+    max-width: 100%;
+    padding: 5%; 
+    /* height: 100px */
+
+}
+
+.pricing-list-items {
+
+    color: #e0e1dd;
+    
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #778da9;
+
+
+}
+
+
+.cost {
+
+    margin-bottom: 2%;
+    display: block; 
+    background-color: #0d1b2a;
+    color: #ffa260;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+    z-index: 5;
+}
+
+ 
+
+
+.hidden {
+
+    display: none; 
+}
+
+
+@media (min-width:1300px) {
+
+    .row-of-images {
+        height: 600px;
+    }
+
+}
+
+
+@media (max-width:1298px) and (min-width:900px) {
+
+    .row-of-images {
+        height: 400px;
+    }
+
+}
+
+@media (max-width:899px) and (min-width:300px) {
+
+    .row-of-images {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 961px) {
+
+    .panel {
+        flex-direction: column;
+    }
+
+    .pricing-plans {
+        border-bottom: 1px solid #778da9;
+    }
+
+}
